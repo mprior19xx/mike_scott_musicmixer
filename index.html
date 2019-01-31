@@ -7,33 +7,51 @@
 	<link href="css/reset.css" rel="stylesheet" type="text/css">
 	<link href="css/main.css" rel="stylesheet" type="text/css">
 </head>
+
 <body>
 
-	<header id="headLine">
+<div id="container">
+	<header id="mainHeader">
 		<h1>Create Your Dream Band!</h1>
-		<p>Choose your band members wisley! This is one tough crowd!</p>
-	</header>
-	<section id="stage-area">
-		<div class="drum-area"></div>
-		<div class="guitar-area"></div>
-		<div class="bass-area"></div>
-		<div class="vocal-1-area"></div>
-		<div class="vocal-2-area"></div>
-	</section>
+	</header> <!-- end header -->
+
+	<div id="rules">
+		<p>Drag and drop your instruments onto the stage! Choose wisley, this is one tough crowd!</p>
+	</div> <!-- end rules -->
+
+	<div id="stageArea">
+		<p>THIS IS THE STAGE</p>
+		<div class="microphoneArea"> </div>
+		<div class="guitarArea"> </div>
+		<div class="bassArea"> </div>
+		<div class="drumArea"> </div>
+	</div> <!-- end stageArea -->
 
 	<!-- <section id="wrapper" class="commonSettings"></section> -->
 
-	<footer>
-		<p>Select your band members!</p>
+	<div id="selectMembers">
 		<nav id="buttonHolder">
-			<img data-musicianref="0" src="images/.jpg" alt="musician">
-			<img data-musicianref="1" src="images/.jpg" alt="musician">
-	    	<img data-musicianref="2" src="images/.jpg" alt="musician">
-			<img data-musicianref="3" src="images/.jpg" alt="musician">
-			<img data-musicianref="4" src="images/.jpg" alt="musician">
+			<!-- MICROPHONES -->
+			<img class="instrument" data-musicianref="4" src="images/icons_microphone-rock.svg" alt="musician">
+			<img class="instrument" data-musicianref="4" src="images/icons_microphone-metal.svg" alt="musician">
+			<img class="instrument" data-musicianref="4" src="images/icons_microphone-country.svg" alt="musician">
+			<!-- GUITARS -->
+			<img class="instrument" data-musicianref="0" src="images/icons_guitar-rock.svg" alt="musician">
+			<img class="instrument" data-musicianref="1" src="images/icons_guitar-metal.svg" alt="musician">
+	    	<img class="instrument" data-musicianref="2" src="images/icons_guitar-country.svg" alt="musician">
+			<!-- BASSES -->
+			<img class="instrument" data-musicianref="3" src="images/icons_bass-rock.svg" alt="musician">
+			<img class="instrument" data-musicianref="4" src="images/icons_bass-metal.svg" alt="musician">
+			<img class="instrument" data-musicianref="4" src="images/icons_bass-country.svg" alt="musician">
+			<!-- DRUMS -->
+			<img class="instrument" data-musicianref="4" src="images/icons_drums-rock.svg" alt="musician">
+			<img class="instrument" data-musicianref="4" src="images/icons_drums-metal.svg" alt="musician">
+			<img class="instrument" data-musicianref="4" src="images/icons_drums-country.svg" alt="musician">
 		</nav>
-	</footer>
+	</div> <!-- end selectMembers -->
 
-	<script src="script/main.js"></script>
+</div> <!-- end container -->
+
+<script src="script/main.js"></script>
 </body>
 </html>
