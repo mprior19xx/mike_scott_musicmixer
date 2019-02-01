@@ -1,3 +1,53 @@
 @charset "utf-8";
 /* CSS Document */
 
+/*SITE STYLING*/
+#container{
+	display: block;
+}
+
+#mainHeader{
+	text-align: center;
+	padding: 15px;
+}
+
+#rules{
+	text-align: center;
+}
+
+#stageArea{
+	display: flex;
+	margin: 0 auto;
+	width: 960px;
+	height: 500px;
+	background-color: #666;
+}
+
+#selectMembers{
+	padding: 25px;
+	}
+
+#buttonHolder{
+	display: flex;
+	flex-flow: row wrap;
+	max-width:760px;
+	margin: 0 auto;
+	padding-left: 75px;
+}
+
+
+/*ICON STYLING*/
+.instrument{
+	width: 100px;
+	height: 100px;
+	margin: 5px;
+	opacity: 0.6;
+	background-color: #E6E6FA;
+	box-shadow: 2px 2px #888888;
+}
+
+.instrument:hover{
+	width: 150px;
+	height: 150px;
+	opacity: 1.0;
+}
