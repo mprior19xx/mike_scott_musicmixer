@@ -5,6 +5,7 @@
 	<title>Musicmixer by Mike Prior and Scott Olthoff</title>
 	
 	<link href="css/reset.css" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Orbitron%7CRoboto" rel="stylesheet">
 	<link href="css/main.css" rel="stylesheet" type="text/css">
 </head>
 
@@ -16,7 +17,7 @@
 	</header> <!-- end header -->
 
 	<div id="rules">
-		<p>Drag and drop your instruments onto the stage! Choose wisely, this is one tough crowd!</p>
+		<h2>Drag and drop your instruments onto the stage! Choose wisely, this is one tough crowd!</h2>
 	</div> <!-- end rules -->
 
 	<div id="stageArea">
@@ -29,25 +30,40 @@
 
 	<!-- <section id="wrapper" class="commonSettings"></section> -->
 
-	<div id="selectMembers">
-		<nav id="buttonHolder">
-			<!-- MICROPHONES -->
+	<div id="buttonHolder">
+		<!-- MICROPHONES -->
+		<div class="instrumentGroup" id="microphones">
 			<img class="instrument" data-musicianref="4" src="images/icons_microphone-rock.svg" alt="musician">
 			<img class="instrument" data-musicianref="4" src="images/icons_microphone-metal.svg" alt="musician">
 			<img class="instrument" data-musicianref="4" src="images/icons_microphone-country.svg" alt="musician">
-			<!-- GUITARS -->
+
+			<h2>Vocals</h2>
+		</div>
+		<!-- GUITARS -->
+		<div class="instrumentGroup" id="guitars">
 			<img class="instrument" data-musicianref="0" src="images/icons_guitar-rock.svg" alt="musician">
 			<img class="instrument" data-musicianref="1" src="images/icons_guitar-metal.svg" alt="musician">
 	    	<img class="instrument" data-musicianref="2" src="images/icons_guitar-country.svg" alt="musician">
-			<!-- BASSES -->
+
+	    	<h2>Guitar</h2>
+    	</div>
+		<!-- BASSES -->
+		<div class="instrumentGroup" id="basses">
 			<img class="instrument" data-musicianref="3" src="images/icons_bass-rock.svg" alt="musician">
 			<img class="instrument" data-musicianref="4" src="images/icons_bass-metal.svg" alt="musician">
 			<img class="instrument" data-musicianref="4" src="images/icons_bass-country.svg" alt="musician">
-			<!-- DRUMS -->
+
+			<h2>Bass</h2>
+		</div>
+		<!-- DRUMS -->
+		<div class="instrumentGroup" id="drums">
+
 			<img class="instrument" data-musicianref="4" src="images/icons_drums-rock.svg" alt="musician">
 			<img class="instrument" data-musicianref="4" src="images/icons_drums-metal.svg" alt="musician">
 			<img class="instrument" data-musicianref="4" src="images/icons_drums-country.svg" alt="musician">
-		</nav>
+
+			<h2>Drums</h2>
+		</div>
 	</div> <!-- end selectMembers -->
 
 </div> <!-- end container -->
