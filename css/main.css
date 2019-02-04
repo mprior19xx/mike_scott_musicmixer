@@ -2,51 +2,90 @@
 /* CSS Document */
 
 /*SITE STYLING*/
+body {
+	color: white;
+	background: #540113; /* Old browsers */
+	background: -moz-linear-gradient(top, #540113 0%, #2d0009 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, #540113 0%,#2d0009 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, #540113 0%,#2d0009 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#540113', endColorstr='#2d0009',GradientType=0 ); /* IE6-9 */
+}
+
 #container{
 	display: block;
 }
 
+/*Styles the main header*/
 #mainHeader{
 	text-align: center;
-	padding: 15px;
+	padding: 20px;
+	font-family: 'Orbitron', sans-serif;
+	font-size: 48px;
+	font-weight: bold;
+	text-transform: uppercase;
 }
 
+/*Styles all H2s*/
+h2{
+	font-family: 'Roboto', sans-serif;
+	font-size: 20px;
+}
+
+/*Styles the rules*/
 #rules{
 	text-align: center;
 }
 
+/*Styles the stage area*/
 #stageArea{
 	display: flex;
 	margin: 0 auto;
 	width: 960px;
 	height: 500px;
+	padding-top: 20px;
+	padding-bottom: 20px;
 }
 
-#selectMembers{
-	padding: 25px;
-	}
-
+/*Styles area holding the instrument groups*/
 #buttonHolder{
 	display: flex;
+	justify-content: space-between;
 	flex-flow: row wrap;
-	max-width:760px;
+	max-width:960px;
 	margin: 0 auto;
-	padding-left: 75px;
+}
+
+/*Adds space between instrument groups*/
+.instrumentGroup{
+	padding-right: 30px;
+	padding-bottom: 30px;
+}
+
+/*Removes right padding from rightmost instrument groups*/
+#drums{
+	padding-right: 0px;
+}
+
+/*Styles instrument headings*/
+.instrumentGroup h2{
+	text-align: center;
+	padding: 5px;
+	font-weight: bold;
+	text-transform: uppercase;
 }
 
 
 /*ICON STYLING*/
 .instrument{
-	width: 100px;
-	height: 100px;
-	margin: 5px;
-	opacity: 0.6;
-	background-color: #E6E6FA;
+	width: 60px;
+	height: 60px;
+	margin: 3px;
+	opacity: 0.8;
+	background-color: white;
 	box-shadow: 2px 2px #888888;
 }
 
+/*Styles icons on hover*/
 .instrument:hover{
-	width: 150px;
-	height: 150px;
 	opacity: 1.0;
 }
