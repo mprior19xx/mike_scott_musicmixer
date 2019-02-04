@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 22.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="stage" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 960 500" style="enable-background:new 0 0 960 500;" xml:space="preserve">
+<style type="text/css">
+	.st0{clip-path:url(#back_x5F_wall_x5F_clipping_x5F_mask_1_);}
+	.st1{fill:url(#back_x5F_wall_4_);}
+	.st2{opacity:0.2;fill:url(#back_x5F_wall_x5F_highlight_1_);}
+	.st3{fill:url(#back_x5F_wall_x5F_shadows_2_);}
+	.st4{fill:none;stroke:#191919;stroke-width:2;stroke-miterlimit:10;}
+	.st5{fill:none;stroke:#191919;stroke-miterlimit:10;}
+	.st6{fill:none;stroke:#191919;stroke-width:3;stroke-miterlimit:10;}
+	.st7{fill:url(#floor_3_);}
+	.st8{opacity:0.25;clip-path:url(#floor_x5F_highlight_x5F_clipping_x5F_mask_1_);fill:url(#floor_x5F_highlight_2_);}
+	.st9{clip-path:url(#floorboards_x5F_cliiping_x5F_mask_1_);}
+	.st10{opacity:0.7;fill:#FFFFFF;}
+	.st11{opacity:0.5;fill:#FFFFFF;}
+</style>
+<g id="wall">
+	
+		<image style="display:none;overflow:visible;" width="4000" height="1471" id="back_x5F_wall" xlink:href="EFBF4552.png"  transform="matrix(0.24 0 0 0.24 0 0)">
+	</image>
+	<g id="back_x5F_wall_3_">
+		<defs>
+			<rect id="back_x5F_wall_x5F_clipping_x5F_mask" width="960" height="352.8"/>
+		</defs>
+		<clipPath id="back_x5F_wall_x5F_clipping_x5F_mask_1_">
+			<use xlink:href="#back_x5F_wall_x5F_clipping_x5F_mask"  style="overflow:visible;"/>
+		</clipPath>
+		<g id="back_x5F_wall_2_" class="st0">
+			<linearGradient id="back_x5F_wall_4_" gradientUnits="userSpaceOnUse" x1="480" y1="0" x2="480" y2="352.8333">
+				<stop  offset="0" style="stop-color:#8B5E3C"/>
+				<stop  offset="0.4343" style="stop-color:#895D3B"/>
+				<stop  offset="0.5907" style="stop-color:#825838"/>
+				<stop  offset="0.7023" style="stop-color:#775132"/>
+				<stop  offset="0.7924" style="stop-color:#664529"/>
+				<stop  offset="0.8696" style="stop-color:#50371E"/>
+				<stop  offset="0.9367" style="stop-color:#352611"/>
+				<stop  offset="0.9972" style="stop-color:#161101"/>
+				<stop  offset="1" style="stop-color:#141000"/>
+			</linearGradient>
+			<rect id="back_x5F_wall_1_" class="st1" width="960" height="352.8"/>
+			
+				<radialGradient id="back_x5F_wall_x5F_highlight_1_" cx="477.8333" cy="172" r="413.0265" gradientTransform="matrix(1 0 0 0.4009 0 103.4443)" gradientUnits="userSpaceOnUse">
+				<stop  offset="0" style="stop-color:#FFFFFF"/>
+				<stop  offset="1" style="stop-color:#FFFFFF;stop-opacity:0"/>
+			</radialGradient>
+			<ellipse id="back_x5F_wall_x5F_highlight" class="st2" cx="477.8" cy="172.4" rx="563.2" ry="155.4"/>
+			
+				<radialGradient id="back_x5F_wall_x5F_shadows_2_" cx="480" cy="176" r="414.2279" gradientTransform="matrix(1 0 0 0.4009 0 105.85)" gradientUnits="userSpaceOnUse">
+				<stop  offset="0" style="stop-color:#3C2415;stop-opacity:0"/>
+				<stop  offset="0.8587" style="stop-color:#3C2415;stop-opacity:0.1288"/>
+				<stop  offset="1" style="stop-color:#3C2415;stop-opacity:0.15"/>
+			</radialGradient>
+			<rect id="back_x5F_wall_x5F_shadows_1_" x="-70" y="-25.7" class="st3" width="1100" height="404.3"/>
+		</g>
+		<g id="wallboards" class="st0">
+			<line id="walboard_x5F_line1" class="st4" x1="22.4" y1="352.2" x2="21.4" y2="-0.6"/>
+			<line id="walboard_x5F_line2" class="st5" x1="54.8" y1="352.8" x2="53.8" y2="0"/>
+			<line id="walboard_x5F_line3" class="st5" x1="122" y1="352.8" x2="121" y2="0"/>
+			<line id="walboard_x5F_line4" class="st5" x1="163.8" y1="352.8" x2="162.8" y2="0"/>
+			<line id="walboard_x5F_line5" class="st6" x1="216.2" y1="352.8" x2="215.2" y2="0"/>
+			<line id="walboard_x5F_line6" class="st5" x1="251.5" y1="352.8" x2="250.5" y2="0"/>
+			<line id="walboard_x5F_line7" class="st5" x1="294.5" y1="352.8" x2="293.5" y2="0"/>
+			<line id="walboard_x5F_line8" class="st5" x1="340.5" y1="352.8" x2="339.5" y2="0"/>
+			<line id="walboard_x5F_line9" class="st5" x1="387.8" y1="352.8" x2="386.8" y2="0"/>
+			<line id="walboard_x5F_line10" class="st4" x1="434.5" y1="352.8" x2="433.5" y2="0"/>
+			<line id="walboard_x5F_line11" class="st5" x1="478.8" y1="352.8" x2="477.8" y2="0"/>
+			<line id="walboard_x5F_line12" class="st5" x1="524.5" y1="352.8" x2="523.5" y2="0"/>
+			<line id="walboard_x5F_line13" class="st5" x1="562.5" y1="352.8" x2="561.5" y2="0"/>
+			<line id="walboard_x5F_line14" class="st4" x1="606.5" y1="352.8" x2="605.5" y2="0"/>
+			<line id="walboard_x5F_line15" class="st5" x1="649.8" y1="352.8" x2="648.8" y2="0"/>
+			<line id="walboard_x5F_line16" class="st6" x1="694.8" y1="352.8" x2="693.8" y2="0"/>
+			<line id="walboard_x5F_line17" class="st5" x1="738.2" y1="352.8" x2="737.2" y2="0"/>
+			<line id="walboard_x5F_line18" class="st5" x1="778.8" y1="352.8" x2="777.8" y2="0"/>
+			<line id="walboard_x5F_line19" class="st4" x1="825.3" y1="352.8" x2="824.3" y2="0"/>
+			<line id="walboard_x5F_line20" class="st5" x1="862.8" y1="352.8" x2="861.8" y2="0"/>
+			<line id="walboard_x5F_line21" class="st5" x1="907.2" y1="352.8" x2="906.2" y2="0"/>
+			<line id="walboard_x5F_line22" class="st5" x1="933.8" y1="352.8" x2="932.8" y2="0"/>
+		</g>
+	</g>
+</g>
+<g id="floor_1_">
+	
+		<image style="display:none;overflow:visible;" width="4000" height="618" id="floor" xlink:href="EFBF4556.png"  transform="matrix(0.24 0 0 0.24 0 351.84)">
+	</image>
+	<linearGradient id="floor_3_" gradientUnits="userSpaceOnUse" x1="480" y1="500" x2="480" y2="352">
+		<stop  offset="0" style="stop-color:#A97755"/>
+		<stop  offset="0.4151" style="stop-color:#A77654"/>
+		<stop  offset="0.5646" style="stop-color:#A07150"/>
+		<stop  offset="0.6712" style="stop-color:#956949"/>
+		<stop  offset="0.7574" style="stop-color:#845D40"/>
+		<stop  offset="0.8313" style="stop-color:#6E4E33"/>
+		<stop  offset="0.8966" style="stop-color:#523B24"/>
+		<stop  offset="0.9543" style="stop-color:#332512"/>
+		<stop  offset="1" style="stop-color:#141000"/>
+	</linearGradient>
+	<rect id="floor_2_" y="352" class="st7" width="960" height="148"/>
+	<g id="floor_x5F_highlight_1_">
+		<defs>
+			<rect id="floor_x5F_highlight_x5F_clipping_x5F_mask" y="352" width="960" height="148"/>
+		</defs>
+		<clipPath id="floor_x5F_highlight_x5F_clipping_x5F_mask_1_">
+			<use xlink:href="#floor_x5F_highlight_x5F_clipping_x5F_mask"  style="overflow:visible;"/>
+		</clipPath>
+		
+			<radialGradient id="floor_x5F_highlight_2_" cx="477.8333" cy="430" r="321.0382" gradientTransform="matrix(1.6953 0 0 0.164 -332.2366 364.9873)" gradientUnits="userSpaceOnUse">
+			<stop  offset="0" style="stop-color:#FFFFFF"/>
+			<stop  offset="1" style="stop-color:#FFFFFF;stop-opacity:0"/>
+		</radialGradient>
+		<ellipse id="floor_x5F_highlight" class="st8" cx="477.8" cy="435.5" rx="763.2" ry="64.5"/>
+	</g>
+	<g id="floorboards_1_">
+		<defs>
+			<rect id="floorboards_x5F_cliiping_x5F_mask" width="960" height="500"/>
+		</defs>
+		<clipPath id="floorboards_x5F_cliiping_x5F_mask_1_">
+			<use xlink:href="#floorboards_x5F_cliiping_x5F_mask"  style="overflow:visible;"/>
+		</clipPath>
+		<g id="floorboards" class="st9">
+			<line id="floorboard_x5F_line1" class="st5" x1="54.3" y1="352" x2="-1.4" y2="380.2"/>
+			<line id="floorboard_x5F_line2" class="st4" x1="121" y1="352" x2="-1.7" y2="416.7"/>
+			<line id="floorboard_x5F_line3" class="st5" x1="164.3" y1="352" x2="-1.7" y2="447.7"/>
+			<line id="floorboard_x5F_line4" class="st5" x1="216.7" y1="352" x2="-1" y2="497.6"/>
+			<line id="floorboard_x5F_line5" class="st5" x1="251" y1="352" x2="58" y2="500.8"/>
+			<line id="floorboard_x5F_line6" class="st6" x1="294" y1="352" x2="134.7" y2="502.5"/>
+			<line id="floorboard_x5F_line7" class="st5" x1="340" y1="352" x2="223" y2="501.7"/>
+			<line id="floorboard_x5F_line8" class="st4" x1="387.3" y1="352" x2="308.9" y2="501.4"/>
+			<line id="floorboard_x5F_line9" class="st5" x1="434" y1="352" x2="393.3" y2="501.4"/>
+			<line id="floorboard_x5F_line10" class="st5" x1="478.3" y1="352" x2="478.3" y2="500"/>
+			<line id="floorboard_x5F_line11" class="st6" x1="524" y1="352" x2="562.5" y2="501.8"/>
+			<line id="floorboard_x5F_line12" class="st5" x1="562" y1="352" x2="631.1" y2="500.9"/>
+			<line id="floorboard_x5F_line13" class="st5" x1="606" y1="352" x2="712.6" y2="500.9"/>
+			<line id="floorboard_x5F_line14" class="st4" x1="649.3" y1="352" x2="796.1" y2="502.1"/>
+			<line id="floorboard_x5F_line15" class="st5" x1="694.3" y1="352" x2="874.8" y2="500.7"/>
+			<line id="floorboard_x5F_line16" class="st5" x1="737.7" y1="352" x2="950.6" y2="500.9"/>
+			<line id="floorboard_x5F_line17" class="st4" x1="961.4" y1="460.2" x2="778.3" y2="352"/>
+			<line id="floorboard_x5F_line18" class="st5" x1="961" y1="424.6" x2="824.3" y2="352"/>
+			<line id="floorboard_x5F_line19" class="st5" x1="960.7" y1="400.3" x2="862.3" y2="352"/>
+			<line id="floorboard_x5F_line20" class="st6" x1="962.2" y1="377" x2="906.7" y2="352"/>
+		</g>
+	</g>
+</g>
+<g id="spotlights_1_">
+	<g id="spotlight4_1_">
+		<g id="light4">
+			<ellipse id="spotlight4_x5F_bottom" class="st10" cx="835.9" cy="424" rx="107.5" ry="24"/>
+			<path id="spotlight4_x5F_top" class="st11" d="M943.4,424c0-13.3-48.1-24-107.5-24s-107.5,10.7-107.5,24L835.9,9.8L943.4,424z"/>
+		</g>
+		<rect id="spotlight_x5F_holder_x5F_v1_3_" x="810.8" width="5" height="25"/>
+		<rect id="spotlight_x5F_holder_x5F_v2_3_" x="856" width="5" height="25"/>
+		<rect id="spotlight_x5F_holder_x5F_h1_3_" x="810.8" y="20" width="50.3" height="5"/>
+		<rect id="spotlight_3_" x="818" y="9.8" width="35.8" height="42"/>
+		<rect id="spotlight_x5F_lens_3_" x="813.3" y="51.8" width="45.3" height="2.9"/>
+	</g>
+	<g id="spotlight3_1_">
+		<g id="light3">
+			<ellipse id="spotlight3_x5F_bottom" class="st10" cx="598.9" cy="424" rx="107.5" ry="24"/>
+			<path id="spotlight3_x5F_top" class="st11" d="M706.4,424c0-13.3-48.1-24-107.5-24s-107.5,10.7-107.5,24L598.9,9.8L706.4,424z"/>
+		</g>
+		<rect id="spotlight_x5F_holder_x5F_v1_2_" x="573.8" width="5" height="25"/>
+		<rect id="spotlight_x5F_holder_x5F_v2_2_" x="619" width="5" height="25"/>
+		<rect id="spotlight_x5F_holder_x5F_h1_2_" x="573.8" y="20" width="50.3" height="5"/>
+		<rect id="spotlight_2_" x="581" y="9.8" width="35.8" height="42"/>
+		<rect id="spotlight_x5F_lens_2_" x="576.3" y="51.8" width="45.3" height="2.9"/>
+	</g>
+	<g id="spotlight2_1_">
+		<g id="light2">
+			<ellipse id="spotlight2_x5F_bottom" class="st10" cx="358.9" cy="424" rx="107.5" ry="24"/>
+			<path id="spotlight2_x5F_top" class="st11" d="M466.4,424c0-13.3-48.1-24-107.5-24s-107.5,10.7-107.5,24L358.9,9.8L466.4,424z"/>
+		</g>
+		<rect id="spotlight_x5F_holder_x5F_v1_1_" x="333.8" width="5" height="25"/>
+		<rect id="spotlight_x5F_holder_x5F_v2_1_" x="379" width="5" height="25"/>
+		<rect id="spotlight_x5F_holder_x5F_h1_1_" x="333.8" y="20" width="50.3" height="5"/>
+		<rect id="spotlight_1_" x="341" y="9.8" width="35.8" height="42"/>
+		<rect id="spotlight_x5F_lens_1_" x="336.3" y="51.8" width="45.3" height="2.9"/>
+	</g>
+	<g id="spotlight1_1_">
+		<g id="light1">
+			<ellipse id="spotlight1_x5F_bottom" class="st10" cx="122.9" cy="424" rx="107.5" ry="24"/>
+			<path id="spotlight1_x5F_top" class="st11" d="M230.4,424c0-13.3-48.1-24-107.5-24S15.4,410.7,15.4,424L122.9,9.8L230.4,424z"/>
+		</g>
+		<rect id="spotlight_x5F_holder_x5F_v1" x="97.3" width="5" height="25"/>
+		<rect id="spotlight_x5F_holder_x5F_v2" x="142.5" width="5" height="25"/>
+		<rect id="spotlight_x5F_holder_x5F_h1" x="97.3" y="20" width="50.3" height="5"/>
+		<rect id="spotlight" x="104.5" y="9.8" width="35.8" height="42"/>
+		<rect id="spotlight_x5F_lens" x="99.8" y="51.8" width="45.3" height="2.9"/>
+	</g>
+</g>
+</svg>
