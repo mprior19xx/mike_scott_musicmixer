@@ -20,47 +20,73 @@
 		<h2>Drag and drop your instruments onto the stage! Choose wisely, this is one tough crowd!</h2>
 	</div> <!-- end rules -->
 
-	<div id="stageArea">
-		<img class="stage" src="images/stage.svg" alt="stage" width="960" height="500">
-		<div class="microphoneArea"> </div>
-		<div class="guitarArea"> </div>
-		<div class="bassArea"> </div>
-		<div class="drumArea"> </div>
-	</div> <!-- end stageArea -->
-
-	<!-- <section id="wrapper" class="commonSettings"></section> -->
+	<div id="stageArea"></div> <!-- end stageArea -->
 
 	<div id="buttonHolder">
 		<!-- MICROPHONES -->
 		<div class="instrumentGroup" id="microphones">
-			<img class="instrument" data-musicianref="4" src="images/icons_microphone-rock.svg" alt="musician">
-			<img class="instrument" data-musicianref="4" src="images/icons_microphone-metal.svg" alt="musician">
-			<img class="instrument" data-musicianref="4" src="images/icons_microphone-country.svg" alt="musician">
+			<div id="mic1Box" class="instrumentBox">
+				<img draggable id="mic1" class="mic" src="images/icons_microphone-rock.svg" alt="musician">
+			</div>
+
+			<div id="mic2Box" class="instrumentBox">
+				<img draggable id="mic2" class="mic" src="images/icons_microphone-metal.svg" alt="musician">
+			</div>
+
+			<div id="mic3Box" class="instrumentBox">
+				<img draggable id="mic3" class="mic" src="images/icons_microphone-country.svg" alt="musician">
+			</div>
 
 			<h2>Vocals</h2>
 		</div>
+
 		<!-- GUITARS -->
 		<div class="instrumentGroup" id="guitars">
-			<img class="instrument" data-musicianref="0" src="images/icons_guitar-rock.svg" alt="musician">
-			<img class="instrument" data-musicianref="1" src="images/icons_guitar-metal.svg" alt="musician">
-	    	<img class="instrument" data-musicianref="2" src="images/icons_guitar-country.svg" alt="musician">
+			<div id="guitar1Box" class="instrumentBox">
+				<img draggable id="guitar1" class="guitar" src="images/icons_guitar-rock.svg" alt="musician">
+			</div>
+
+			<div id="guitar2Box" class="instrumentBox">
+				<img draggable id="guitar2" class="guitar" src="images/icons_guitar-metal.svg" alt="musician">
+			</div>
+
+	    	<div id="guitar3Box" class="instrumentBox">
+	    		<img draggable id="guitar3" class="guitar" src="images/icons_guitar-country.svg" alt="musician">
+	    	</div>
 
 	    	<h2>Guitar</h2>
     	</div>
+
 		<!-- BASSES -->
 		<div class="instrumentGroup" id="basses">
-			<img class="instrument" data-musicianref="3" src="images/icons_bass-rock.svg" alt="musician">
-			<img class="instrument" data-musicianref="4" src="images/icons_bass-metal.svg" alt="musician">
-			<img class="instrument" data-musicianref="4" src="images/icons_bass-country.svg" alt="musician">
+			<div id="bass1Box" class="instrumentBox">
+				<img draggable id="bass1" class="bass" src="images/icons_bass-rock.svg" alt="musician">
+			</div>
+
+			<div id="bass2Box" class="instrumentBox">
+				<img draggable id="bass2" class="bass" src="images/icons_bass-metal.svg" alt="musician">
+			</div>
+
+			<div id="bass3Box" class="instrumentBox">
+				<img draggable id="bass3" class="bass" src="images/icons_bass-country.svg" alt="musician">
+			</div>
 
 			<h2>Bass</h2>
 		</div>
+
 		<!-- DRUMS -->
 		<div class="instrumentGroup" id="drums">
+			<div id="drum1Box" class="instrumentBox">
+				<img draggable id="drum1" class="drum" src="images/icons_drums-rock.svg" alt="musician">
+			</div>
 
-			<img class="instrument" data-musicianref="4" src="images/icons_drums-rock.svg" alt="musician">
-			<img class="instrument" data-musicianref="4" src="images/icons_drums-metal.svg" alt="musician">
-			<img class="instrument" data-musicianref="4" src="images/icons_drums-country.svg" alt="musician">
+			<div id="drum2Box" class="instrumentBox">
+				<img draggable id="drum2" class="drum" src="images/icons_drums-metal.svg" alt="musician">
+			</div>
+
+			<div id="drum3Box" class="instrumentBox">
+				<img draggable id="drum3" class="drum" src="images/icons_drums-country.svg" alt="musician">
+			</div>
 
 			<h2>Drums</h2>
 		</div>
@@ -68,6 +94,6 @@
 
 </div> <!-- end container -->
 
-<script src="script/main.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>
