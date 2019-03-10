@@ -38,13 +38,12 @@ h2{
 
 /*Styles the stage area*/
 #stageArea{
-	display: relative;
+	display: flex;
 	margin: 0 auto;
 	width: 960px;
 	height: 500px;
-	margin-top: 20px;
-	margin-bottom: 20px;
-	background: url(../images/stage.svg) center no-repeat;
+	padding-top: 20px;
+	padding-bottom: 20px;
 }
 
 /*Styles area holding the instrument groups*/
@@ -77,66 +76,16 @@ h2{
 
 
 /*ICON STYLING*/
-.mic, .guitar, .bass, .drum{
+.instrument{
 	width: 60px;
 	height: 60px;
-}
-
-.instrumentBox{
-	display: inline-block;
-	width: 60px;
-	height: 60px;
+	margin: 3px;
 	opacity: 0.8;
 	background-color: white;
+	box-shadow: 2px 2px #888888;
 }
 
 /*Styles icons on hover*/
-.mic:hover, .guitar:hover, .bass:hover, .drum:hover{
-	opacity: 1;
-}
-
-.instrumentBox:hover{
-	opacity: 1;
-}
-
-/*Adds outline to stage when something is being dragged over it*/
-.outline{
-	outline: 5px solid #FFF;
-	outline-offset: -5px;
-}
-
-/*Styles and positions microphone on stage*/
-#stageArea img.mic{
-	position: absolute;
-	width: 150px;
-	height: 150px;
-	margin-left: 48px;
-	margin-top: 290px;
-}
-
-/*Styles and positions guitar on stage*/
-#stageArea img.guitar{
-	position: absolute;
-	width: 150px;
-	height: 150px;
-	margin-left: 284px;
-	margin-top: 290px;
-}
-
-/*Styles and positions bass on stage*/
-#stageArea img.bass{
-	position: absolute;
-	width: 150px;
-	height: 150px;
-	margin-left: 524px;
-	margin-top: 290px;
-}
-
-/*Styles and positions drums on stage*/
-#stageArea img.drum{
-	position: absolute;
-	width: 150px;
-	height: 150px;
-	margin-left: 761px;
-	margin-top: 305px;
+.instrument:hover{
+	opacity: 1.0;
 }
