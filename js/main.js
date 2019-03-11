@@ -3,6 +3,8 @@
 	let buttonHolder = document.querySelector("#buttonHolder");
 	let dropZone = document.querySelector("#stageArea");
 	let instrumentClass = null;
+	let instrumentSound  = null;
+	let audio = null;
 	const instruments = Array.from(document.querySelectorAll('img'));
 	
 	// Drag and drop functionality goes here
@@ -11,6 +13,8 @@
 			img.addEventListener("dragstart", function(e) {
 				e.dataTransfer.setData("text/plain", this.id)
 				instrumentClass = this.className;
+				instrumentSound = this.dataset.sound;
+				console.log(instrumentSound);
 			});
 		});
 	}
@@ -52,6 +56,19 @@
 		});
 	}
 
+	// Playing Intrument Audio when icon is placed
+	function playSound(){
+
+		//listens for drop to stage
+		window.addEventListener("drop", function(e) {
+			audio = document.querySelector(`audio[data-sound="${instrumentSound}"]`);
+			if (!audio){return;}
+			audio.currentTime = 0;
+			audio.load();
+			audio.play();
+		});
+	};
+
 	// Removes instruments from stage when clicked
 	function removeInstrument() {
 		// Listens for mouse down within stage area
@@ -64,6 +81,7 @@
 						let box = document.querySelector(`#${img.id}Box`);
 						console.log(img);
 						box.appendChild(img);
+						audio.pause();
 					});
 				};
 			});
@@ -74,4 +92,5 @@
 	initDrag();
 	dAndD(dropZone);
 	removeInstrument();
+	playSound();
 })();

@@ -26,15 +26,15 @@
 		<!-- MICROPHONES -->
 		<div class="instrumentGroup" id="microphones">
 			<div id="mic1Box" class="instrumentBox">
-				<img draggable id="mic1" class="mic" src="images/icons_microphone-rock.svg" alt="musician">
+				<img draggable id="mic1" class="mic" src="images/icons_microphone-rock.svg" alt="musician" data-sound="RockVocalSound">
 			</div>
 
 			<div id="mic2Box" class="instrumentBox">
-				<img draggable id="mic2" class="mic" src="images/icons_microphone-metal.svg" alt="musician">
+				<img draggable id="mic2" class="mic" src="images/icons_microphone-metal.svg" alt="musician" data-sound="MetalVocalSound">
 			</div>
 
 			<div id="mic3Box" class="instrumentBox">
-				<img draggable id="mic3" class="mic" src="images/icons_microphone-country.svg" alt="musician">
+				<img draggable id="mic3" class="mic" src="images/icons_microphone-country.svg" alt="musician" data-sound="CountryVocalSound">
 			</div>
 
 			<h2>Vocals</h2>
@@ -43,15 +43,15 @@
 		<!-- GUITARS -->
 		<div class="instrumentGroup" id="guitars">
 			<div id="guitar1Box" class="instrumentBox">
-				<img draggable id="guitar1" class="guitar" src="images/icons_guitar-rock.svg" alt="musician">
+				<img draggable id="guitar1" class="guitar" src="images/icons_guitar-rock.svg" alt="musician" data-sound="RockGuitarSound">
 			</div>
 
 			<div id="guitar2Box" class="instrumentBox">
-				<img draggable id="guitar2" class="guitar" src="images/icons_guitar-metal.svg" alt="musician">
+				<img draggable id="guitar2" class="guitar" src="images/icons_guitar-metal.svg" alt="musician" data-sound="MetalGuitarSound">
 			</div>
 
 	    	<div id="guitar3Box" class="instrumentBox">
-	    		<img draggable id="guitar3" class="guitar" src="images/icons_guitar-country.svg" alt="musician">
+	    		<img draggable id="guitar3" class="guitar" src="images/icons_guitar-country.svg" alt="musician" data-sound="CountryGuitarSound">
 	    	</div>
 
 	    	<h2>Guitar</h2>
@@ -60,15 +60,15 @@
 		<!-- BASSES -->
 		<div class="instrumentGroup" id="basses">
 			<div id="bass1Box" class="instrumentBox">
-				<img draggable id="bass1" class="bass" src="images/icons_bass-rock.svg" alt="musician">
+				<img draggable id="bass1" class="bass" src="images/icons_bass-rock.svg" alt="musician" data-sound="RockBassSound">
 			</div>
 
 			<div id="bass2Box" class="instrumentBox">
-				<img draggable id="bass2" class="bass" src="images/icons_bass-metal.svg" alt="musician">
+				<img draggable id="bass2" class="bass" src="images/icons_bass-metal.svg" alt="musician" data-sound="MetalBassSound">
 			</div>
 
 			<div id="bass3Box" class="instrumentBox">
-				<img draggable id="bass3" class="bass" src="images/icons_bass-country.svg" alt="musician">
+				<img draggable id="bass3" class="bass" src="images/icons_bass-country.svg" alt="musician" data-sound="CountryBassSound">
 			</div>
 
 			<h2>Bass</h2>
@@ -77,20 +77,39 @@
 		<!-- DRUMS -->
 		<div class="instrumentGroup" id="drums">
 			<div id="drum1Box" class="instrumentBox">
-				<img draggable id="drum1" class="drum" src="images/icons_drums-rock.svg" alt="musician">
+				<img draggable id="drum1" class="drum" src="images/icons_drums-rock.svg" alt="musician" data-sound="RockDrumSound">
 			</div>
 
 			<div id="drum2Box" class="instrumentBox">
-				<img draggable id="drum2" class="drum" src="images/icons_drums-metal.svg" alt="musician">
+				<img draggable id="drum2" class="drum" src="images/icons_drums-metal.svg" alt="musician" data-sound="MetalDrumSound">
 			</div>
 
 			<div id="drum3Box" class="instrumentBox">
-				<img draggable id="drum3" class="drum" src="images/icons_drums-country.svg" alt="musician">
+				<img draggable id="drum3" class="drum" src="images/icons_drums-country.svg" alt="musician" data-sound="CountryDrumSound">
 			</div>
 
 			<h2>Drums</h2>
 		</div>
 	</div> <!-- end selectMembers -->
+
+	
+<!-- Audio Loops For Rock Band -->
+<audio data-sound="RockGuitarSound" src="audio/Rockstar.mp3"> </audio>
+<audio data-sound="RockBassSound" src="audio/Rockstar.mp3"> </audio>
+<audio data-sound="RockVocalSound" src="audio/Rockstar.mp3"> </audio>
+<audio data-sound="RockDrumSound" src="audio/Rockstar.mp3"> </audio>
+
+<!-- Audio Loops For Metal Band -->
+<audio data-sound="MetalGuitarSound" src="audio/TheMetal.mp3"> </audio>
+<audio data-sound="MetalBassSound" src="audio/TheMetal.mp3"> </audio>
+<audio data-sound="MetalVocalSound" src="audio/TheMetal.mp3"> </audio>
+<audio data-sound="MetalDrumSound" src="audio/TheMetal.mp3"> </audio>
+
+<!-- Audio Loops For Country Band -->
+<audio data-sound="CountryGuitarSound" src="audio/TakeMeHomeCountryRoads.mp3"> </audio>
+<audio data-sound="CountryBassSound" src="audio/TakeMeHomeCountryRoads.mp3"> </audio>
+<audio data-sound="CountryVocalSound" src="audio/TakeMeHomeCountryRoads.mp3"> </audio>
+<audio data-sound="CountryDrumSound"> </audio>
 
 </div> <!-- end container -->
 
