@@ -1,15 +1,21 @@
 (() => {
-	// Set up instruments and stage
-	let buttonHolder = document.querySelector("#buttonHolder");
-	let dropZone = document.querySelector("#stageArea");
+	// Variables
 	let instrumentClass = null;
 	let instrumentSound  = null;
 	let audio = null;
-	const instruments = Array.from(document.querySelectorAll('img'));
+
+	// Constants
+	const 	instruments = Array.from(document.querySelectorAll('img')),
+			iconHolder = document.querySelector('#iconHolder'),
+			dropZone = document.querySelector('#stageArea'),
+			instructionsButton = document.querySelector('#instructionsButton'),
+			resetButton = document.querySelector('#resetButton'),
+			lightBox = document.querySelector('.lightbox'),
+			closeLB = document.querySelector('.lightboxClose');
 	
 	// Drag and drop functionality goes here
 	function initDrag() {
-		buttonHolder.querySelectorAll('img').forEach(img => {
+		iconHolder.querySelectorAll('img').forEach(img => {
 			img.addEventListener("dragstart", function(e) {
 				e.dataTransfer.setData("text/plain", this.id)
 				instrumentClass = this.className;
@@ -88,9 +94,58 @@
 		});
 	}
 
+	// Shows instructions lightbox
+	function showLightbox() {
+		// Shows lightbox
+		lightBox.classList.add("showLightbox");
+
+		// Fades lightbox in
+		TweenMax.from(lightBox, 0.25, {opacity: 0});
+	}
+
+	// Fades out the instructions lightbox
+	function fadeOutLightbox() {
+		// Fades lightbox out
+		TweenMax.to(lightBox, 0.25, {opacity: 0, onComplete: hideLightbox});
+	}
+
+	// Hides the instructions lightbox
+	function hideLightbox() {
+		// Restores lightbox opacity
+		TweenMax.to(lightBox, 0, {opacity: 1});
+
+		// Hides lightbox
+		lightBox.classList.remove("showLightbox");
+	}
+
+	// Resets the stage
+	function reset() {
+		console.log("!!!");
+		// Selects all images
+		document.querySelectorAll('img').forEach(img => {
+			// If the image is on the stage, move it back to the button area.
+			if(dropZone.contains(img)) {
+				let box = document.querySelector(`#${img.id}Box`);
+				console.log(img);
+				box.appendChild(img);
+				audio.pause();
+			};
+		});
+	}
+
 	// Invoke the functions
 	initDrag();
 	dAndD(dropZone);
 	removeInstrument();
 	playSound();
+
+	// Shows instructions if button is pressed
+	instructionsButton.addEventListener("click", showLightbox);
+
+	// Hides lightbox if close button is pressed
+	closeLB.addEventListener("click", fadeOutLightbox);
+
+	// Resets stage when reset button is pressed
+	resetButton.addEventListener("click", reset);
+
 })();
