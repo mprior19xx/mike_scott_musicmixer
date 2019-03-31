@@ -108,6 +108,7 @@ h2 {
 	transition: 0.25s;
 }
 
+/*Changes instrument group opacity on hover*/
 .instrumentGroup:hover {
 	opacity: 1;
 }
@@ -243,10 +244,12 @@ h2 {
 	font-weight: bold;
 }
 
+/*Changes opacity of close button on hover*/
 .lightboxClose:hover {
 	opacity: 1;
 }
 
+/*Styles the display box*/
 .lightboxInner {
 	background-color: #fff;
 	width: 50%;
@@ -258,6 +261,7 @@ h2 {
 	margin-top: 10%;
 }
 
+/*Styles the lightbox header*/
 .lightboxInner h3 {
 	font-family: 'Orbitron', sans-serif;
 	font-size: 30px;
@@ -267,6 +271,7 @@ h2 {
 	margin-bottom: 15px;
 }
 
+/*Styles the lightbox text*/
 .lightboxInner p {
 	margin-bottom: 10px;
 }
