@@ -1,9 +1,9 @@
 <!doctype html>
 <html>
 <head>
-<meta charset="utf-8">
+	<meta charset="utf-8">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
 	<title>Musicmixer by Mike Prior and Scott Olthoff</title>
-	
 	<link href="css/reset.css" rel="stylesheet" type="text/css">
 	<link href="https://fonts.googleapis.com/css?family=Orbitron%7CRoboto" rel="stylesheet">
 	<link href="css/main.css" rel="stylesheet" type="text/css">
@@ -16,83 +16,129 @@
 		<h1>Create Your Dream Band!</h1>
 	</header> <!-- end header -->
 
-	<div id="rules">
-		<h2>Drag and drop your instruments onto the stage! Choose wisely, this is one tough crowd!</h2>
-	</div> <!-- end rules -->
+	<!-- Instructions and reset buttons -->
+	<div id="buttonArea">
+		<button id="instructionsButton" class="button">Instructions</button>
+		<button id="resetButton" class="button">Reset</button>
+	</div> <!-- end buttonArea -->
 
+	<!-- Stage -->
 	<div id="stageArea"></div> <!-- end stageArea -->
 
-	<div id="buttonHolder">
+	<!-- Icon drawer -->
+	<div id="iconHolder">
 		<!-- MICROPHONES -->
 		<div class="instrumentGroup" id="microphones">
+			<!-- Mic 1 -->
 			<div id="mic1Box" class="instrumentBox">
+				<div id="mic1Grey" class="greyInstrument"></div>
 				<img draggable id="mic1" class="mic" src="images/icons_microphone-rock.svg" alt="musician" data-sound="RockVocalSound">
-			</div>
+			</div> <!-- End mix1Box -->
 
+			<!-- Mic 2 -->
 			<div id="mic2Box" class="instrumentBox">
+				<div id="mic2Grey" class="greyInstrument"></div>
 				<img draggable id="mic2" class="mic" src="images/icons_microphone-metal.svg" alt="musician" data-sound="MetalVocalSound">
-			</div>
+			</div> <!-- End mic2Box -->
 
+			<!-- Mic 3 -->
 			<div id="mic3Box" class="instrumentBox">
+				<div id="mic3Grey" class="greyInstrument"></div>
 				<img draggable id="mic3" class="mic" src="images/icons_microphone-country.svg" alt="musician" data-sound="CountryVocalSound">
-			</div>
+			</div> <!-- End mic3Box -->
 
 			<h2>Vocals</h2>
-		</div>
+		</div> <!-- End microphones -->
 
 		<!-- GUITARS -->
 		<div class="instrumentGroup" id="guitars">
+			<!-- Guitar 1 -->
 			<div id="guitar1Box" class="instrumentBox">
+				<div id="guitar1Grey" class="greyInstrument"></div>
 				<img draggable id="guitar1" class="guitar" src="images/icons_guitar-rock.svg" alt="musician" data-sound="RockGuitarSound">
-			</div>
+			</div> <!-- End guitar1Box -->
 
+			<!-- Guitar 2 -->
 			<div id="guitar2Box" class="instrumentBox">
+				<div id="guitar2Grey" class="greyInstrument"></div>
 				<img draggable id="guitar2" class="guitar" src="images/icons_guitar-metal.svg" alt="musician" data-sound="MetalGuitarSound">
-			</div>
+			</div> <!-- End guitar2Box -->
 
+			<!-- Guitar 3 -->
 	    	<div id="guitar3Box" class="instrumentBox">
+	    		<div id="guitar3Grey" class="greyInstrument"></div>
 	    		<img draggable id="guitar3" class="guitar" src="images/icons_guitar-country.svg" alt="musician" data-sound="CountryGuitarSound">
-	    	</div>
+	    	</div> <!-- End guitar3Box -->
 
 	    	<h2>Guitar</h2>
-    	</div>
+    	</div> <!-- End guitars -->
 
 		<!-- BASSES -->
 		<div class="instrumentGroup" id="basses">
+			<!-- Bass 1 -->
 			<div id="bass1Box" class="instrumentBox">
+				<div id="bass1Grey" class="greyInstrument"></div>
 				<img draggable id="bass1" class="bass" src="images/icons_bass-rock.svg" alt="musician" data-sound="RockBassSound">
-			</div>
+			</div> <!-- End bass1Box -->
 
+			<!-- Bass 2 -->
 			<div id="bass2Box" class="instrumentBox">
+				<div id="bass2Grey" class="greyInstrument"></div>
 				<img draggable id="bass2" class="bass" src="images/icons_bass-metal.svg" alt="musician" data-sound="MetalBassSound">
-			</div>
+			</div> <!-- End bass2Box -->
 
+			<!-- Bass 3 -->
 			<div id="bass3Box" class="instrumentBox">
+				<div id="bass3Grey" class="greyInstrument"></div>
 				<img draggable id="bass3" class="bass" src="images/icons_bass-country.svg" alt="musician" data-sound="CountryBassSound">
-			</div>
+			</div> <!-- End bass3Box -->
 
 			<h2>Bass</h2>
-		</div>
+		</div> <!-- End basses -->
 
 		<!-- DRUMS -->
 		<div class="instrumentGroup" id="drums">
+			<!-- Drum 1 -->
 			<div id="drum1Box" class="instrumentBox">
+				<div id="drum1Grey" class="greyInstrument"></div>
 				<img draggable id="drum1" class="drum" src="images/icons_drums-rock.svg" alt="musician" data-sound="RockDrumSound">
-			</div>
+			</div> <!-- End drum1Box -->
 
+			<!-- Drum 2 -->
 			<div id="drum2Box" class="instrumentBox">
+				<div id="drum2Grey" class="greyInstrument"></div>
 				<img draggable id="drum2" class="drum" src="images/icons_drums-metal.svg" alt="musician" data-sound="MetalDrumSound">
-			</div>
+			</div> <!-- End drum2Box -->
 
+			<!-- Drum 3 -->
 			<div id="drum3Box" class="instrumentBox">
+				<div id="drum3Grey" class="greyInstrument"></div>
 				<img draggable id="drum3" class="drum" src="images/icons_drums-country.svg" alt="musician" data-sound="CountryDrumSound">
-			</div>
+			</div> <!-- End drum3Box-->
 
 			<h2>Drums</h2>
-		</div>
-	</div> <!-- end selectMembers -->
+		</div> <!-- End Drums -->
+	</div> <!-- end iconHolder -->
 
-	
+	<!-- Instructions Lightbox -->
+	<section class="lightbox">
+	    <h2 class="hidden">Instructions Lightbox</h2>
+		
+		<div class="lightboxInner">
+		    <!-- Close Button -->
+		    <span class="lightboxClose">X</span>
+			
+			<!-- Lightbox Heading -->
+		    <h3>INSTRUCTIONS</h3>
+
+			<!-- Instructions -->
+		    <p>-Drag and drop instruments onto the stage to start playing that instrument's part of the song.</p>
+		    <p>-To remove an instument from the stage and stop playing that instrument, click on the icon on the stage.</p>
+		    <p>-To remove all instruments from the stage and stop the music completely, click on the reset button.</p>
+		</div> <!-- End lightboxInner -->
+    </section> <!-- End lightbox -->
+
+
 <!-- Audio Loops For Rock Band -->
 <audio data-sound="RockGuitarSound" src="audio/Rock_Guitar.mp3"> </audio>
 <audio data-sound="RockBassSound" src="audio/Rock_Bass.mp3"> </audio>

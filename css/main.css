@@ -2,21 +2,28 @@
 /* CSS Document */
 
 /*SITE STYLING*/
-body {
-	color: white;
-	background: #540113; /* Old browsers */
-	background: -moz-linear-gradient(top, #540113 0%, #2d0009 100%); /* FF3.6-15 */
-	background: -webkit-linear-gradient(top, #540113 0%,#2d0009 100%); /* Chrome10-25,Safari5.1-6 */
-	background: linear-gradient(to bottom, #540113 0%,#2d0009 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#540113', endColorstr='#2d0009',GradientType=0 ); /* IE6-9 */
+.hidden {
+	display: none;
 }
 
-#container{
+body {
+	color: white;
+	background: #2d0009; /* Old browsers */
+	background: #2d0009 -moz-linear-gradient(top, #540113 0%, #2d0009 100%) no-repeat; /* FF3.6-15 */
+	background: #2d0009 -webkit-linear-gradient(top, #540113 0%,#2d0009 100%) no-repeat; /* Chrome10-25,Safari5.1-6 */
+	background: #2d0009 linear-gradient(to bottom, #540113 0%,#2d0009 100%) no-repeat; /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#540113', endColorstr='#2d0009',GradientType=0 ); /* IE6-9 */
+	font-family: 'Roboto', sans-serif;
+}
+
+/*TITLE STYLES*/
+
+#container {
 	display: block;
 }
 
 /*Styles the main header*/
-#mainHeader{
+#mainHeader {
 	text-align: center;
 	padding: 20px;
 	font-family: 'Orbitron', sans-serif;
@@ -26,29 +33,63 @@ body {
 }
 
 /*Styles all H2s*/
-h2{
-	font-family: 'Roboto', sans-serif;
+h2 {
 	font-size: 20px;
 }
 
+/*BUTTON STYLES*/
+
 /*Styles the rules*/
-#rules{
+#buttonArea {
 	text-align: center;
 }
 
+/*Styles the buttons*/
+.button {
+	background: none;
+	border: 2px solid #fff;
+	border-radius: 15px;
+	padding: 10px 20px 10px 20px;
+	font-family: 'Roboto', sans-serif;
+	font-size: 20px;
+	color: white;
+	background-color: rgba(0,0,0,0.2);
+	transition: 0.25s;
+	opacity: 0.8;
+	margin: 0 10px 0 10px;
+}
+
+/*Changes appearance of buttons on hover*/
+.button:hover {
+	background: none;
+	cursor: pointer;
+	opacity: 1;
+}
+
+/*STAGE STYLING*/
+
 /*Styles the stage area*/
-#stageArea{
+#stageArea {
 	display: relative;
 	margin: 0 auto;
-	width: 960px;
-	height: 500px;
+	max-width: 960px;
+	height:500px;
 	margin-top: 20px;
 	margin-bottom: 20px;
 	background: url(../images/stage.svg) center no-repeat;
+	background-size: cover;
 }
 
+/*Adds outline to stage when something is being dragged over it*/
+.outline {
+	outline: 5px solid #FFF;
+	outline-offset: -5px;
+}
+
+/*ICON DRAWER STYLING*/
+
 /*Styles area holding the instrument groups*/
-#buttonHolder{
+#iconHolder {
 	display: flex;
 	justify-content: space-between;
 	flex-flow: row wrap;
@@ -56,57 +97,87 @@ h2{
 	margin: 0 auto;
 }
 
-/*Adds space between instrument groups*/
-.instrumentGroup{
-	padding-right: 30px;
-	padding-bottom: 30px;
+/*Styles the instrument groups*/
+.instrumentGroup {
+	margin-bottom: 30px;
+	border: solid 2px #fff;
+	padding: 8px;
+	border-radius: 25px;
+	background-color: rgba(0,0,0,0.2);
+	opacity: 0.8;
+	transition: 0.25s;
 }
 
-/*Removes right padding from rightmost instrument groups*/
-#drums{
-	padding-right: 0px;
+/*Changes instrument group opacity on hover*/
+.instrumentGroup:hover {
+	opacity: 1;
 }
 
 /*Styles instrument headings*/
-.instrumentGroup h2{
+.instrumentGroup h2 {
 	text-align: center;
-	padding: 5px;
+	padding-top: 5px;
 	font-weight: bold;
 	text-transform: uppercase;
 }
 
 
 /*ICON STYLING*/
-.mic, .guitar, .bass, .drum{
-	width: 60px;
-	height: 60px;
+
+/*Styles instrument icons*/
+.mic, .guitar, .bass, .drum {
+	width: 50px;
+	height: 50px;
+	position: absolute;
 }
 
-.instrumentBox{
+/*Styles icon background*/
+.instrumentBox {
 	display: inline-block;
-	width: 60px;
-	height: 60px;
-	opacity: 0.8;
+	width: 50px;
+	height: 50px;
+	opacity: 0.6;
 	background-color: white;
+	border-radius: 50%;
+	margin-left: 2px;
+	margin-right: 2px;
+	transition: 0.25s;
+	padding: 7px;
 }
 
-/*Styles icons on hover*/
-.mic:hover, .guitar:hover, .bass:hover, .drum:hover{
+/*Changes instrument opacity on hover*/
+.instrumentBox:hover {
 	opacity: 1;
 }
 
-.instrumentBox:hover{
-	opacity: 1;
+/*Sets grey instrument sizes to be the same as the icons and greys out the background image*/
+.greyInstrument {
+	width: 50px;
+	height: 50px;
+	display: inline-block;
+	position: absolute;
+	filter: grayscale();
+	opacity: 0.7;
 }
 
-/*Adds outline to stage when something is being dragged over it*/
-.outline{
-	outline: 5px solid #FFF;
-	outline-offset: -5px;
-}
+/*Sets icon background images (so that when an instrument is on stage, a greyed out version is displayed in the instrument box*/
+#mic1Grey { background: url(../images/icons_microphone-rock.svg) center no-repeat; }
+#mic2Grey { background: url(../images/icons_microphone-metal.svg) center no-repeat; }
+#mic3Grey { background: url(../images/icons_microphone-country.svg) center no-repeat; }
+#guitar1Grey { background: url(../images/icons_guitar-rock.svg) center no-repeat; }
+#guitar2Grey { background: url(../images/icons_guitar-metal.svg) center no-repeat; }
+#guitar3Grey { background: url(../images/icons_guitar-country.svg) center no-repeat; }
+#bass1Grey { background: url(../images/icons_bass-rock.svg) center no-repeat; }
+#bass2Grey { background: url(../images/icons_bass-metal.svg) center no-repeat; }
+#bass3Grey { background: url(../images/icons_bass-country.svg) center no-repeat; }
+#drum1Grey { background: url(../images/icons_drums-rock.svg) center no-repeat; }
+#drum2Grey { background: url(../images/icons_drums-metal.svg) center no-repeat; }
+#drum3Grey { background: url(../images/icons_drums-country.svg) center no-repeat; }
+
+/*ON STAGE ICON STYLES*/
 
 /*Styles and positions microphone on stage*/
-#stageArea img.mic{
+#stageArea img.mic {
 	position: absolute;
 	width: 150px;
 	height: 150px;
@@ -115,7 +186,7 @@ h2{
 }
 
 /*Styles and positions guitar on stage*/
-#stageArea img.guitar{
+#stageArea img.guitar {
 	position: absolute;
 	width: 150px;
 	height: 150px;
@@ -124,7 +195,7 @@ h2{
 }
 
 /*Styles and positions bass on stage*/
-#stageArea img.bass{
+#stageArea img.bass {
 	position: absolute;
 	width: 150px;
 	height: 150px;
@@ -133,10 +204,74 @@ h2{
 }
 
 /*Styles and positions drums on stage*/
-#stageArea img.drum{
+#stageArea img.drum {
 	position: absolute;
 	width: 150px;
 	height: 150px;
 	margin-left: 761px;
 	margin-top: 305px;
+}
+
+/*LIGHTBOX STYLES*/
+
+/*Styles lightbox*/
+.lightbox {
+	position: fixed;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	text-align: center;
+	background: rgba(0,0,0,0.85);
+	display: none;
+}
+
+/*Shows lightbox*/
+.showLightbox { 
+	display: flex;
+	flex-direction: row;
+	justify-content: center; 
+}
+
+/*Styles lightbox close button*/
+.lightboxClose {
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	cursor: pointer;
+	font-size: 17px;
+	opacity: 0.5;
+	transition: 0.25s;
+	font-weight: bold;
+}
+
+/*Changes opacity of close button on hover*/
+.lightboxClose:hover {
+	opacity: 1;
+}
+
+/*Styles the display box*/
+.lightboxInner {
+	background-color: #fff;
+	width: 50%;
+	padding: 20px;
+	color: #000;
+	text-align: left;
+	position: relative;
+	height: 300px;
+	margin-top: 10%;
+}
+
+/*Styles the lightbox header*/
+.lightboxInner h3 {
+	font-family: 'Orbitron', sans-serif;
+	font-size: 30px;
+	font-weight: bold;
+	text-transform: uppercase;
+	text-align: center;
+	margin-bottom: 15px;
+}
+
+/*Styles the lightbox text*/
+.lightboxInner p {
+	margin-bottom: 10px;
 }
