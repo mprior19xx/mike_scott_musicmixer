@@ -25,7 +25,6 @@
 				e.dataTransfer.setData("text/plain", this.id)
 				instrumentClass = this.className;
 				instrumentSound = this.dataset.sound;
-				console.log(instrumentSound);
 			});
 		});
 	}
@@ -53,8 +52,6 @@
 		zone.addEventListener("drop", function(e) {
 			e.preventDefault();
 			dropZone.classList.toggle("outline");
-
-			console.log(zone);
 
 			// Adds item to the drop zone
 			let instrument = e.dataTransfer.getData("text/plain");
@@ -85,8 +82,18 @@
 	// Plays the audio
 	function playSound(audio){
 		if (!audio){return;}
-		audio.currentTime = 0;
 		audio.load();
+		audio.currentTime = 0;
+
+		// Starts instrument at the same timecode that any other instruments on stage of the same genre are at
+		for (i = 0; i < allAudio.length; i++) {
+			if (allAudio[i] != null) {
+				if (audio.className == allAudio[i].className) {
+					audio.currentTime = allAudio[i].currentTime;
+				};
+			};
+		};
+
 		audio.play();
 	}
 
@@ -102,10 +109,11 @@
 						let box = document.querySelector(`#${img.id}Box`);
 						box.appendChild(img);
 
-						// Stops whatever instrument was removed from stage
+						// Stops whatever instrument was removed from stage and resets its time
 						for (i = 0; i < audioLabels.length; i++) {
 							if (this.className == audioLabels[i]) {
 								allAudio[i].pause();
+								allAudio[i].currentTime = 0;
 							};
 						};
 					});
@@ -140,19 +148,18 @@
 
 	// Resets the stage
 	function reset() {
-		console.log("!!!");
 		// Selects all images
 		document.querySelectorAll('img').forEach(img => {
 			// If the image is on the stage, move it back to the button area.
 			if(dropZone.contains(img)) {
 				let box = document.querySelector(`#${img.id}Box`);
-				console.log(img);
 				box.appendChild(img);
 				
-				// Stops all audio
-				for (i = 0; i < audioLabels.length; i++) {
+				// Stops all audio and resets the time
+				for (i = 0; i < allAudio.length; i++) {
 					if (allAudio[i] != null) {
 						allAudio[i].pause();
+						allAudio[i].currentTime = 0;
 					};
 				};
 			};
