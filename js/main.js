@@ -1,8 +1,11 @@
 (() => {
 	// Variables
-	let instrumentClass = null;
-	let instrumentSound  = null;
-	let audio = null;
+	let instrumentClass = null,
+		instrumentSound  = null,
+		micAudio = null,
+		guitarAudio = null,
+		bassAudio = null,
+		drumAudio = null;
 
 	// Constants
 	const 	instruments = Array.from(document.querySelectorAll('img')),
@@ -11,7 +14,9 @@
 			instructionsButton = document.querySelector('#instructionsButton'),
 			resetButton = document.querySelector('#resetButton'),
 			lightBox = document.querySelector('.lightbox'),
-			closeLB = document.querySelector('.lightboxClose');
+			closeLB = document.querySelector('.lightboxClose'),
+			allAudio = [micAudio, guitarAudio, bassAudio, drumAudio],
+			audioLabels = ["mic", "guitar", "bass", "drum"];
 	
 	// Drag and drop functionality goes here
 	function initDrag() {
@@ -62,18 +67,28 @@
 		});
 	}
 
-	// Playing Intrument Audio when icon is placed
-	function playSound(){
+	// Prepares the audio
+	function prepSound(){
 
-		//listens for drop to stage
+		//Listens for drop to stage
 		window.addEventListener("drop", function(e) {
-			audio = document.querySelector(`audio[data-sound="${instrumentSound}"]`);
-			if (!audio){return;}
-			audio.currentTime = 0;
-			audio.load();
-			audio.play();
+			// Sets according audio variable to the sound of the selected instrument and calls playSound to play the audio
+			for (i = 0; i < audioLabels.length; i++) {
+				if (instrumentClass == audioLabels[i]) {
+					allAudio[i] = document.querySelector(`audio[data-sound="${instrumentSound}"]`);
+					playSound(allAudio[i]);
+				};
+			};
 		});
 	};
+
+	// Plays the audio
+	function playSound(audio){
+		if (!audio){return;}
+		audio.currentTime = 0;
+		audio.load();
+		audio.play();
+	}
 
 	// Removes instruments from stage when clicked
 	function removeInstrument() {
@@ -85,9 +100,14 @@
 				if(dropZone.contains(img)) {
 					img.addEventListener("click", function(e) {
 						let box = document.querySelector(`#${img.id}Box`);
-						console.log(img);
 						box.appendChild(img);
-						audio.pause();
+
+						// Stops whatever instrument was removed from stage
+						for (i = 0; i < audioLabels.length; i++) {
+							if (this.className == audioLabels[i]) {
+								allAudio[i].pause();
+							};
+						};
 					});
 				};
 			});
@@ -128,7 +148,13 @@
 				let box = document.querySelector(`#${img.id}Box`);
 				console.log(img);
 				box.appendChild(img);
-				audio.pause();
+				
+				// Stops all audio
+				for (i = 0; i < audioLabels.length; i++) {
+					if (allAudio[i] != null) {
+						allAudio[i].pause();
+					};
+				};
 			};
 		});
 	}
@@ -137,7 +163,7 @@
 	initDrag();
 	dAndD(dropZone);
 	removeInstrument();
-	playSound();
+	prepSound();
 
 	// Shows instructions if button is pressed
 	instructionsButton.addEventListener("click", showLightbox);
