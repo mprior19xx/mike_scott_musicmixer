@@ -61,22 +61,19 @@
 				};
 			};
 			zone.appendChild(document.querySelector(`#${instrument}`));
+			prepSound();
 		});
 	}
 
 	// Prepares the audio
 	function prepSound(){
-
-		//Listens for drop to stage
-		window.addEventListener("drop", function(e) {
-			// Sets according audio variable to the sound of the selected instrument and calls playSound to play the audio
-			for (i = 0; i < audioLabels.length; i++) {
-				if (instrumentClass == audioLabels[i]) {
-					allAudio[i] = document.querySelector(`audio[data-sound="${instrumentSound}"]`);
-					playSound(allAudio[i]);
-				};
+		// Sets according audio variable to the sound of the selected instrument and calls playSound to play the audio
+		for (i = 0; i < audioLabels.length; i++) {
+			if (instrumentClass == audioLabels[i]) {
+				allAudio[i] = document.querySelector(`audio[data-sound="${instrumentSound}"]`);
+				playSound(allAudio[i]);
 			};
-		});
+		};
 	};
 
 	// Plays the audio
@@ -170,7 +167,6 @@
 	initDrag();
 	dAndD(dropZone);
 	removeInstrument();
-	prepSound();
 
 	// Shows instructions if button is pressed
 	instructionsButton.addEventListener("click", showLightbox);
